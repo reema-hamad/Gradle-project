@@ -5,9 +5,9 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
         AWS_S3_BUCKET = "gradle1"
         ARTIFACT_NAME = "sample-gradle.jar"
-        AWS_EB_APP_NAME = "gradle"
+        AWS_EB_APP_NAME = "gradle1"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Gradle-env"
+        AWS_EB_ENVIRONMENT = "Gradle1-env"
     }
     stages {
         stage('Validate') {
